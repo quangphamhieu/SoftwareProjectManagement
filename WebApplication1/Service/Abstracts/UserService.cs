@@ -6,18 +6,19 @@ using WebApplication1.Entity;
 using WebApplication1.DbContexts;
 using WebApplication1.DTO.Create;
 using WebApplication1.DTO.Update;
-using WebApplication1.Service.Implements;
-using WebApplication1.DTO.Delete;
+using WebApplication1.Service.Abstracts;
 
-namespace WebApplication1.Service.Abstracts
+namespace WebApplication1.Service.Implements
 {
     public class UserService : IUserService
     {
         private readonly ApplicationDbContext _context;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public UserService(ApplicationDbContext context)
+        public UserService(ApplicationDbContext context, IHttpContextAccessor httpContextAccessor)
         {
             _context = context;
+            _httpContextAccessor = httpContextAccessor; // Khởi tạo _httpContextAccessor
         }
 
         public void CreateUser(UserCreateDto userCreateDto)
@@ -36,35 +37,39 @@ namespace WebApplication1.Service.Abstracts
             var userRole = new UserRole
             {
                 UserId = user.Id,
-                RoleId = userCreateDto.RoleId // Giả sử bạn truyền RoleId trong DTO
+                RoleId = userCreateDto.RoleId
             };
-            // Thêm userRole vào context và lưu thay đổi
+
             _context.UserRoles.Add(userRole);
-            _context.SaveChanges(); // Lưu thay đổi để cập nhật UserRole
+            _context.SaveChanges();
         }
 
-        public UserFindDto FindUserById(int userId)
+        public UserFindDto FindUserById()
         {
+            // Lấy ID của người dùng từ claims
+            var userIdClaim = _httpContextAccessor.HttpContext?.User.FindFirst("Id");
+            var userId = userIdClaim != null ? Int32.Parse(userIdClaim.Value) : 0;
+
             var user = _context.Users
-                .Where(u => u.Id == userId)
+                .Where(u => u.Id == userId) // Lọc người dùng theo ID đã lấy từ claims
                 .Select(u => new UserFindDto
                 {
                     Id = u.Id,
                     Email = u.Email,
                     FullName = u.FullName,
                     DepartmentHeadId = u.DepartmentHeadId,
-                    // Truy vấn RoleName từ UserRole và Role qua Join
+                    DepartmentHeadName = u.DepartmentHead != null ? u.DepartmentHead.FullName : string.Empty,
                     RoleName = _context.UserRoles
                         .Where(ur => ur.UserId == u.Id)
                         .Join(_context.Roles,
                             ur => ur.RoleId,
                             r => r.Id,
                             (ur, r) => r.Name)
-                        .FirstOrDefault() // Lấy tên vai trò đầu tiên (giả định người dùng chỉ có một vai trò)
+                        .FirstOrDefault()
                 })
                 .FirstOrDefault();
 
-            return user;
+            return user; // Trả về thông tin người dùng
         }
 
 
@@ -77,18 +82,61 @@ namespace WebApplication1.Service.Abstracts
                     Email = user.Email,
                     FullName = user.FullName,
                     DepartmentHeadId = user.DepartmentHeadId,
-                    // Lấy RoleName từ UserRole và Role thông qua Join
+                    DepartmentHeadName = user.DepartmentHead != null ? user.DepartmentHead.FullName : string.Empty,
                     RoleName = _context.UserRoles
                         .Where(ur => ur.UserId == user.Id)
                         .Join(_context.Roles,
                             ur => ur.RoleId,
                             r => r.Id,
                             (ur, r) => r.Name)
-                        .FirstOrDefault() // Lấy tên vai trò đầu tiên (giả định người dùng chỉ có một vai trò)
+                        .FirstOrDefault()
                 })
                 .ToList();
         }
 
+        public IEnumerable<UserFindDto> FindUsersByFullName(string fullName)
+        {
+            return _context.Users
+                .Where(u => u.FullName.Contains(fullName))
+                .Select(u => new UserFindDto
+                {
+                    Id = u.Id,
+                    Email = u.Email,
+                    FullName = u.FullName,
+                    DepartmentHeadId = u.DepartmentHeadId,
+                    DepartmentHeadName = u.DepartmentHead != null ? u.DepartmentHead.FullName : string.Empty,
+                    RoleName = _context.UserRoles
+                        .Where(ur => ur.UserId == u.Id)
+                        .Join(_context.Roles,
+                            ur => ur.RoleId,
+                            r => r.Id,
+                            (ur, r) => r.Name)
+                        .FirstOrDefault()
+                })
+                .ToList();
+        }
+
+        public IEnumerable<UserFindDto> FindUsersByDepartmentHeadName(string departmentHeadName)
+        {
+            return _context.Users
+                .Where(u => u.DepartmentHead != null && u.DepartmentHead.FullName.Contains(departmentHeadName))
+                .Select(u => new UserFindDto
+                {
+                    Id = u.Id,
+                    Email = u.Email,
+                    FullName = u.FullName,
+                    DepartmentHeadId = u.DepartmentHeadId,
+                    DepartmentHeadName = u.DepartmentHead != null ? u.DepartmentHead.FullName : string.Empty,
+                    RoleName = _context.UserRoles
+                        .Where(ur => ur.UserId == u.Id)
+                        .Join(_context.Roles,
+                            ur => ur.RoleId,
+                            r => r.Id,
+                            (ur, r) => r.Name)
+                        .FirstOrDefault()
+                })
+                .ToList();
+        }
 
         public void UpdateUser(int userId, UserUpdateDto userUpdateDto)
         {
@@ -110,5 +158,5 @@ namespace WebApplication1.Service.Abstracts
             _context.Users.Remove(user);
             _context.SaveChanges();
         }
-    }
+    } 
 }

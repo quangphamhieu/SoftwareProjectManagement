@@ -16,11 +16,15 @@ namespace WebApplication1
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-            var key = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(builder.Configuration["JwtSettings:Key"] ?? ""));
-            // Add services to the container.
 
-            builder.Services.AddControllers().AddJsonOptions(o => o.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles);
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+            // Lấy key từ JwtSettings
+            var key = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(builder.Configuration["JwtSettings:Key"] ?? ""));
+
+            // Thêm dịch vụ vào container
+            builder.Services.AddControllers()
+                .AddJsonOptions(o => o.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles);
+
+            // Cấu hình Swagger
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen(option =>
             {
@@ -35,37 +39,37 @@ namespace WebApplication1
                     Scheme = "Bearer"
                 });
                 option.AddSecurityRequirement(new OpenApiSecurityRequirement
-    {
-        {
-            new OpenApiSecurityScheme
-            {
-                Reference = new OpenApiReference
                 {
-                    Type=ReferenceType.SecurityScheme,
-                    Id="Bearer"
-                }
-            },
-            new string[]{}
-        }
-    });
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference
+                            {
+                                Type=ReferenceType.SecurityScheme,
+                                Id="Bearer"
+                            }
+                        },
+                        new string[]{}
+                    }
+                });
             });
 
-
-
+            // Cấu hình DbContext
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
             {
                 options.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
             });
 
+            // Đăng ký các dịch vụ
             builder.Services.AddScoped<IUserService, UserService>();
             builder.Services.AddScoped<IAssetService, AssetService>();
             builder.Services.AddScoped<IRequestService, RequestService>();
             builder.Services.AddScoped<IRoleService, RoleService>();
             builder.Services.AddScoped<IRequestStatusService, RequestStatusService>();
+            builder.Services.AddHttpContextAccessor();
 
-            // C?u hình AuthenticationService
-            builder.Services.AddScoped<AuthenticationService>(); // Khai báo service c?a b?n
-
+            // Cấu hình Authentication
+            builder.Services.AddScoped<AuthenticationService>();
             builder.Services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -87,7 +91,7 @@ namespace WebApplication1
 
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
+            // Cấu hình pipeline xử lý yêu cầu HTTP
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
@@ -95,8 +99,7 @@ namespace WebApplication1
             }
 
             app.UseHttpsRedirection();
-
-            app.UseAuthentication(); // S? d?ng Authentication tru?c Authorization
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapControllers();

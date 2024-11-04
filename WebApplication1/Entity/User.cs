@@ -19,7 +19,6 @@ public partial class User
 
     [Required]
     public string FullName { get; set; } = null!;
-
     public int? DepartmentHeadId { get; set; }
 
     [ForeignKey("DepartmentHeadId")]
