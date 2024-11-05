@@ -26,7 +26,7 @@ namespace WebApplication1.Service
             _configuration = configuration;
         }
 
-        public async Task<string> LoginAsync(LoginDto loginDto)
+        public async Task<(User user, string token)> LoginAsync(LoginDto loginDto)
         {
             var user = await _context.Users
                 .Include(u => u.UserRoles)
@@ -36,7 +36,8 @@ namespace WebApplication1.Service
             if (user == null)
                 throw new Exception("Invalid email or password");
 
-            return jwtToken(user, _configuration);
+            var token = jwtToken(user, _configuration);
+            return (user, token);
         }
 
         public string jwtToken(User user, IConfiguration configuration)

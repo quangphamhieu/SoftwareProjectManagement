@@ -20,7 +20,7 @@ namespace WebApplication1.Controllers
         }
 
         // POST: api/user
-        [HttpPost]
+        [HttpPost("create")]
         [Authorize(Roles = "Admin")]
         public IActionResult CreateUser([FromBody] UserCreateDto userCreateDto)
         {
@@ -29,8 +29,7 @@ namespace WebApplication1.Controllers
         }
 
         // GET: api/user/{id}
-        [HttpGet("all")]
-        [Authorize(Roles = "Admin")]
+        [HttpGet("userinfo")]
         public IActionResult FindUserById()
         {
             var user = _userService.FindUserById(); 
@@ -40,7 +39,7 @@ namespace WebApplication1.Controllers
 
 
         // GET: api/user
-        [HttpGet]
+        [HttpGet("get-all")]
         [Authorize(Roles = "Admin")]
         public IActionResult GetAllUsers()
         {
@@ -49,7 +48,7 @@ namespace WebApplication1.Controllers
         }
 
         // PUT: api/user/{id}
-        [HttpPut("{id}")]
+        [HttpPut("update")]
         [Authorize(Roles = "Admin")]
         public IActionResult UpdateUser(int id, [FromBody] UserUpdateDto userUpdateDto)
         {
@@ -58,7 +57,7 @@ namespace WebApplication1.Controllers
         }
 
         // DELETE: api/user/{id}
-        [HttpDelete("{id}")]
+        [HttpDelete("delete")]
         [Authorize(Roles = "Admin")]
         public IActionResult DeleteUser(int id)
         {

@@ -24,8 +24,12 @@ namespace WebApplication1.Controllers
         {
             try
             {
-                var token = await _authenticationService.LoginAsync(loginDto);
-                return Ok(new { accessToken = token });
+                var (user, token) = await _authenticationService.LoginAsync(loginDto);
+                return Ok(new
+                {
+                    user = user,
+                    accessToken = token
+                });
             }
             catch (Exception ex)
             {
