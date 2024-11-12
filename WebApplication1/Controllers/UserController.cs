@@ -21,7 +21,7 @@ namespace WebApplication1.Controllers
 
         // POST: api/user
         [HttpPost("create")]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public IActionResult CreateUser([FromBody] UserCreateDto userCreateDto)
         {
             _userService.CreateUser(userCreateDto);
@@ -40,7 +40,7 @@ namespace WebApplication1.Controllers
 
         // GET: api/user
         [HttpGet("get-all")]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public IActionResult GetAllUsers()
         {
             var users = _userService.GetAllUsers();
@@ -49,7 +49,7 @@ namespace WebApplication1.Controllers
 
         // PUT: api/user/{id}
         [HttpPut("update")]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public IActionResult UpdateUser(int id, [FromBody] UserUpdateDto userUpdateDto)
         {
             _userService.UpdateUser(id, userUpdateDto);
@@ -58,7 +58,7 @@ namespace WebApplication1.Controllers
 
         // DELETE: api/user/{id}
         [HttpDelete("delete")]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public IActionResult DeleteUser(int id)
         {
             _userService.DeleteUser(id);
@@ -67,7 +67,7 @@ namespace WebApplication1.Controllers
 
         // GET: api/user/search/by-fullname?fullName={fullName}
         [HttpGet("search/by-fullname")]
-        [Authorize(Roles = "Admin, DepartmentHead")]
+        //[Authorize(Roles = "Admin, DepartmentHead")]
         public IActionResult FindUsersByFullName([FromQuery] string fullName)
         {
             var users = _userService.FindUsersByFullName(fullName);
@@ -76,7 +76,7 @@ namespace WebApplication1.Controllers
 
         // GET: api/user/search/by-department-head?departmentHeadName={departmentHeadName}
         [HttpGet("search/by-department-head")]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public IActionResult FindUsersByDepartmentHeadName([FromQuery] string departmentHeadName)
         {
             var users = _userService.FindUsersByDepartmentHeadName(departmentHeadName);

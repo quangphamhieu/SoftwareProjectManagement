@@ -1,0 +1,87 @@
+/* asset.css hoặc employee.css */
+
+/* Container tổng cho trang tài sản */
+.asset-page-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+/* Tiêu đề trang */
+.page-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Container của ô tìm kiếm */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Ô nhập liệu của ô tìm kiếm */
+.search-input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 20px 0 0 20px;
+  font-size: 16px;
+}
+
+/* Nút tìm kiếm */
+.search-button {
+  padding: 10px 15px;
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+.search-button i {
+  font-size: 16px;
+}
+
+/* Thông báo lỗi */
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Danh sách tài sản */
+.asset-list {
+  list-style: none;
+  padding: 0;
+}
+
+.asset-item {
+  background-color: #ffffff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.asset-item p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* Đảm bảo rằng nội dung hiển thị nổi bật trên nền */
+
+.employee-content-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Nền trắng trong suốt nhẹ */
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}

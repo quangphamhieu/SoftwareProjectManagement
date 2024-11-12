@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\server\\webapplication1\\softwareprojectmanagement\\webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\server\\webapplication1\\softwareprojectmanagement\\webapplication1\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\server\\webapplication1\\softwareprojectmanagement\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\server\\webapplication1\\softwareprojectmanagement\\webapplication1\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\server\\webapplication1\\softwareprojectmanagement\\webapplication1\\controllers\\assetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\assetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\server\\webapplication1\\softwareprojectmanagement\\webapplication1\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\server\\webapplication1\\softwareprojectmanagement\\webapplication1\\dto\\auth\\authdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dto\\auth\\authdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\server\\webapplication1\\softwareprojectmanagement\\webapplication1\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\server\\webapplication1\\softwareprojectmanagement\\webapplication1\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -79,20 +95,8 @@
       "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dto\\create\\requestcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\server\\webapplication1\\softwareprojectmanagement\\webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\server\\webapplication1\\softwareprojectmanagement\\webapplication1\\dto\\update\\requestupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dto\\update\\requestupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\server\\webapplication1\\softwareprojectmanagement\\webapplication1\\controllers\\assetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\assetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\server\\webapplication1\\softwareprojectmanagement\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\server\\webapplication1\\softwareprojectmanagement\\webapplication1\\dto\\find\\userfinddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -138,7 +142,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -146,59 +150,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ApplicationDbContextModelSnapshot.cs",
-              "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "ToolTip": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "RelativeToolTip": "WebApplication1\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "ViewState": "AQIAAEYAAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T18:42:55.893Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "20241104184251_AddDepartmentHeadToRequests.cs",
-              "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Migrations\\20241104184251_AddDepartmentHeadToRequests.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Migrations\\20241104184251_AddDepartmentHeadToRequests.cs",
-              "ToolTip": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Migrations\\20241104184251_AddDepartmentHeadToRequests.cs",
-              "RelativeToolTip": "WebApplication1\\Migrations\\20241104184251_AddDepartmentHeadToRequests.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAzwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T02:47:35.912Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Controllers\\UserController.cs",
               "ToolTip": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Controllers\\UserController.cs",
               "RelativeToolTip": "WebApplication1\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBYAAAAcAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEQAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-04T14:47:29.136Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\AuthController.cs",
-              "ToolTip": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "WebApplication1\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwCcAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T14:23:45.929Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "AuthDto.cs",
               "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\DTO\\Auth\\AuthDto.cs",
               "RelativeDocumentMoniker": "WebApplication1\\DTO\\Auth\\AuthDto.cs",
@@ -206,12 +171,11 @@
               "RelativeToolTip": "WebApplication1\\DTO\\Auth\\AuthDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T14:25:21.498Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T14:25:21.498Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "AuthenticationService.cs",
               "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Service\\AuthenticationService.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Service\\AuthenticationService.cs",
@@ -219,12 +183,11 @@
               "RelativeToolTip": "WebApplication1\\Service\\AuthenticationService.cs",
               "ViewState": "AQIAABgAAAAAAAAAAAAAABwAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T16:15:50.356Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T16:15:50.356Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Entity\\User.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Entity\\User.cs",
@@ -232,12 +195,96 @@
               "RelativeToolTip": "WebApplication1\\Entity\\User.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T14:34:24.875Z",
+              "WhenOpened": "2024-11-04T14:34:24.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AssetController.cs",
+              "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Controllers\\AssetController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\AssetController.cs",
+              "ToolTip": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Controllers\\AssetController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\AssetController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:25:46.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "WebApplication1\\appsettings.Development.json",
+              "ToolTip": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\appsettings.Development.json",
+              "RelativeToolTip": "WebApplication1\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-10T10:40:25.628Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
+              "ToolTip": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Program.cs",
+              "RelativeToolTip": "WebApplication1\\Program.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAQwG0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:18:25.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\appsettings.json",
+              "RelativeDocumentMoniker": "WebApplication1\\appsettings.json",
+              "ToolTip": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\appsettings.json",
+              "RelativeToolTip": "WebApplication1\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAACRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-04T18:04:16.672Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwCcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:23:45.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20241104184251_AddDepartmentHeadToRequests.cs",
+              "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Migrations\\20241104184251_AddDepartmentHeadToRequests.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Migrations\\20241104184251_AddDepartmentHeadToRequests.cs",
+              "ToolTip": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Migrations\\20241104184251_AddDepartmentHeadToRequests.cs",
+              "RelativeToolTip": "WebApplication1\\Migrations\\20241104184251_AddDepartmentHeadToRequests.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAzwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T02:47:35.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "WebApplication1\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T18:42:55.893Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "RequestController.cs",
               "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Controllers\\RequestController.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Controllers\\RequestController.cs",
@@ -245,12 +292,11 @@
               "RelativeToolTip": "WebApplication1\\Controllers\\RequestController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T14:57:53.846Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T14:57:53.846Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "IRequestService.cs",
               "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Service\\Implements\\IRequestService.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Service\\Implements\\IRequestService.cs",
@@ -262,7 +308,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "RequestFindDto.cs",
               "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\DTO\\Find\\RequestFindDto.cs",
               "RelativeDocumentMoniker": "WebApplication1\\DTO\\Find\\RequestFindDto.cs",
@@ -274,7 +320,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "Request.cs",
               "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Entity\\Request.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Entity\\Request.cs",
@@ -286,7 +332,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "RequestService.cs",
               "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Service\\Abstracts\\RequestService.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Service\\Abstracts\\RequestService.cs",
@@ -298,7 +344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "20241104183412_Init3.cs",
               "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Migrations\\20241104183412_Init3.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Migrations\\20241104183412_Init3.cs",
@@ -310,7 +356,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "UserService.cs",
               "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Service\\Abstracts\\UserService.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Service\\Abstracts\\UserService.cs",
@@ -322,7 +368,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "RequestStatusService.cs",
               "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Service\\Abstracts\\RequestStatusService.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Service\\Abstracts\\RequestStatusService.cs",
@@ -334,7 +380,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "RequestStatusFindDto.cs",
               "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\DTO\\Find\\RequestStatusFindDto.cs",
               "RelativeDocumentMoniker": "WebApplication1\\DTO\\Find\\RequestStatusFindDto.cs",
@@ -346,7 +392,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "RequestStatus.cs",
               "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Entity\\RequestStatus.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Entity\\RequestStatus.cs",
@@ -358,7 +404,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\DbContexts\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "WebApplication1\\DbContexts\\ApplicationDbContext.cs",
@@ -370,7 +416,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "RequestCreateDto.cs",
               "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\DTO\\Create\\RequestCreateDto.cs",
               "RelativeDocumentMoniker": "WebApplication1\\DTO\\Create\\RequestCreateDto.cs",
@@ -382,19 +428,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\appsettings.json",
-              "RelativeDocumentMoniker": "WebApplication1\\appsettings.json",
-              "ToolTip": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\appsettings.json",
-              "RelativeToolTip": "WebApplication1\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAACRAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-04T18:04:16.672Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "RequestUpdateDto.cs",
               "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\DTO\\Update\\RequestUpdateDto.cs",
               "RelativeDocumentMoniker": "WebApplication1\\DTO\\Update\\RequestUpdateDto.cs",
@@ -406,31 +440,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "AssetController.cs",
-              "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Controllers\\AssetController.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\AssetController.cs",
-              "ToolTip": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Controllers\\AssetController.cs",
-              "RelativeToolTip": "WebApplication1\\Controllers\\AssetController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T14:25:46.311Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Program.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
-              "ToolTip": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Program.cs",
-              "RelativeToolTip": "WebApplication1\\Program.cs",
-              "ViewState": "AQIAAFcAAAAAAAAAAAAQwG0AAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T14:18:25.16Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "UserFindDto.cs",
               "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\DTO\\Find\\UserFindDto.cs",
               "RelativeDocumentMoniker": "WebApplication1\\DTO\\Find\\UserFindDto.cs",
@@ -442,7 +452,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "UserCreateDto.cs",
               "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\DTO\\Create\\UserCreateDto.cs",
               "RelativeDocumentMoniker": "WebApplication1\\DTO\\Create\\UserCreateDto.cs",
@@ -454,7 +464,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "UserUpdateDto.cs",
               "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\DTO\\Update\\UserUpdateDto.cs",
               "RelativeDocumentMoniker": "WebApplication1\\DTO\\Update\\UserUpdateDto.cs",
@@ -466,7 +476,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "IUserService.cs",
               "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Service\\Implements\\IUserService.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Service\\Implements\\IUserService.cs",
@@ -478,7 +488,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "RoleFindDto.cs",
               "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\DTO\\Find\\RoleFindDto.cs",
               "RelativeDocumentMoniker": "WebApplication1\\DTO\\Find\\RoleFindDto.cs",
@@ -490,7 +500,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "RequestItem.cs",
               "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Entity\\RequestItem.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Entity\\RequestItem.cs",
@@ -502,7 +512,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "AssetCreateDto.cs",
               "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\DTO\\Create\\AssetCreateDto.cs",
               "RelativeDocumentMoniker": "WebApplication1\\DTO\\Create\\AssetCreateDto.cs",
@@ -514,7 +524,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "RequestStatusController.cs",
               "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Controllers\\RequestStatusController.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Controllers\\RequestStatusController.cs",
@@ -526,7 +536,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "RoleController.cs",
               "DocumentMoniker": "D:\\Server\\WebApplication1\\SoftwareProjectManagement\\WebApplication1\\Controllers\\RoleController.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Controllers\\RoleController.cs",
