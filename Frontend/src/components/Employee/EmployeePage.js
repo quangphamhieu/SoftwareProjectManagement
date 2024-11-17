@@ -43,7 +43,7 @@ function EmployeePage() {
   return (
     <div className="content-container">
       <div className="header">
-        <h1>Chức Vụ Nhân Viên</h1>
+        <h1>Trang Chủ Nhân Viên</h1>
         {userInfo ? (
           <div
             className="user-dropdown"

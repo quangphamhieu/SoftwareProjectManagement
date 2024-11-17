@@ -430,3 +430,31 @@ body {
   color:#eb5104;
   justify-content:center;
 }
+/* Thông báo cơ bản */
+.message-box {
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #dff0d8;
+  color: #3c763d;
+  border: 1px solid #d6e9c6;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Hiệu ứng viền nhấn mạnh */
+@keyframes borderPulse {
+  0% {
+    border-color: #d6e9c6; /* Màu ban đầu */
+  }
+  50% {
+    border-color: #4caf50; /* Màu nhấn mạnh */
+    box-shadow: 0 0 10px #4caf50; /* Thêm ánh sáng */
+  }
+  100% {
+    border-color: #d6e9c6; /* Quay lại màu ban đầu */
+  }
+}
+
+.animated-border {
+  animation: borderPulse 2s infinite; /* Thời lượng 2 giây, lặp vô hạn */
+}

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "../../styles/admin.css"; // Import file CSS
 import { useNavigate } from "react-router-dom";
 function AdminPage() {
@@ -16,7 +16,8 @@ function AdminPage() {
   const [userInfo, setUserInfo] = useState(null);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const navigate = useNavigate();
-
+  const [messageTimestamp, setMessageTimestamp] = useState("");
+  const messageRef = useRef(null);
   useEffect(() => {
     const fetchUserInfo = async () => {
       const userId = localStorage.getItem("userId"); // Lấy userId từ localStorage
@@ -37,7 +38,21 @@ function AdminPage() {
 
     fetchUserInfo();
   }, []);
+  // Kích hoạt scroll và focus khi thông báo được cập nhật (THÊM MỚI)
+  useEffect(() => {
+    if (message && messageRef.current) {
+      messageRef.current.scrollIntoView({ behavior: "smooth" }); // Cuộn tới thông báo
+      messageRef.current.focus(); // Focus vào thông báo
+    }
 
+    // Tự động ẩn thông báo sau 5 giây (THÊM MỚI)
+    const timer = setTimeout(() => {
+      setMessage(""); // Xóa thông báo
+      setMessageTimestamp(""); // Xóa thời gian thông báo
+    }, 4000);
+
+    return () => clearTimeout(timer); // Xóa timer khi component unmount
+  }, [message]);
   useEffect(() => {
     fetchAllEmployees();
   }, []);
@@ -199,7 +214,7 @@ function AdminPage() {
       {/* Bọc nội dung trong lớp này */}
       <div>
         <div className="header">
-          <h1>Chức Vụ Quản lý nhân viên</h1>
+          <h1>Quản lý nhân viên</h1>
           {userInfo ? (
             <div
               className="user-dropdown"
@@ -222,6 +237,19 @@ function AdminPage() {
             <p>Đang tải thông tin...</p>
           )}
         </div>
+        {/* Hiển thị thông báo */}
+        {message && (
+          <div
+            ref={messageRef} // Gắn ref để focus
+            tabIndex={-1} // Cho phép focus
+            className="message-box animated-border" // Thêm class "animated-border"
+          >
+            {message}{" "}
+            <span style={{ fontSize: "12px" }}>({messageTimestamp})</span>
+            {/* Thêm thời gian thông báo */}
+          </div>
+        )}
+
         {/* Nút điều khiển hiển thị form thêm */}
         <button
           onClick={() => {
@@ -383,8 +411,6 @@ function AdminPage() {
             <button type="submit">Thêm</button>
           </form>
         )}
-
-        {message && <div>{message}</div>}
 
         <h3>Danh sách nhân viên</h3>
         <ul>
