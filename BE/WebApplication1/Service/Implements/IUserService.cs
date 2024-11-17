@@ -8,7 +8,7 @@ namespace WebApplication1.Service.Abstracts
     public interface IUserService
     {
         void CreateUser(UserCreateDto userCreateDto);
-        UserFindDto FindUserById(); // Cập nhật để không có tham số
+        UserFindDto FindUserById(int id); // Cập nhật để không có tham số
         IEnumerable<UserFindDto> GetAllUsers();
         void UpdateUser(int userId, UserUpdateDto userUpdateDto);
         void DeleteUser(int userId);

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using WebApplication1.DTO.Create;
 using WebApplication1.DTO.Find;
@@ -29,13 +30,13 @@ namespace WebApplication1.Controllers
         }
 
         // GET: api/user/{id}
-        [HttpGet("userinfo")]
-        public IActionResult FindUserById()
-        {
-            var user = _userService.FindUserById(); 
-            if (user == null) return NotFound();
-            return Ok(user);
-        }
+        //[HttpGet("userinfo")]
+        //public IActionResult FindUserById()
+        //{
+        //    var user = _userService.FindUserById(); 
+        //    if (user == null) return NotFound();
+        //    return Ok(user);
+        //}
 
 
         // GET: api/user
@@ -82,5 +83,21 @@ namespace WebApplication1.Controllers
             var users = _userService.FindUsersByDepartmentHeadName(departmentHeadName);
             return Ok(users);
         }
+
+        // GET: api/user/{id}
+        [HttpGet("{id}")]
+        public IActionResult GetUserById(int id)
+        {
+            try
+            {
+                var user = _userService.FindUserById(id);
+                return Ok(user);
+            }
+            catch (Exception ex)
+            {
+                return NotFound(new { message = ex.Message });
+            }
+        }
+
     }
 }

@@ -1,33 +1,33 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LoginPage from "./components/LoginPage";
+import AdminPage from "./components/Admin/AdminPage";
+import EmployeePage from "./components/Employee/EmployeePage";
 import AssetListPage from "./components/Employee/AssetListPage";
 import OrderManagementPage from "./components/Employee/OrderManagementPage";
-import AdminPage from "./components/Admin/AdminPage";
+import DepartmentHeadPage from "./components/DepartmentHead/DepartmentHeadPage";
+import ManagementPage from "./components/Management/ManagementPage"; // Đổi sang ManagementPage
+import ManageAssets from "./components/Management/ManageAssets"; // Thêm AddAsset
+import ApproveOrders from "./components/Management/ApproveOrders"; // Thêm ApproveOrders
 
-function App() {
+const App = () => {
   return (
     <Router>
-      <nav className="navbar">
-        <div className="nav-item">
-          <div className="dropdown">
-            <button className="dropdown-btn">Nhân Viên</button>
-            <div className="dropdown-content">
-              <Link to="/assets">Danh sách tài sản</Link>
-              <Link to="/orders">Quản lý đơn</Link>
-            </div>
-          </div>
-        </div>
-        <div className="nav-item">
-          <Link to="/admin">Quản Lý Nhân Viên (Admin)</Link>
-        </div>
-      </nav>
       <Routes>
-        <Route path="/assets" element={<AssetListPage />} />
-        <Route path="/orders" element={<OrderManagementPage />} />
+        <Route path="/" element={<LoginPage />} />
         <Route path="/admin" element={<AdminPage />} />
+        <Route path="/employee" element={<EmployeePage />} />
+        <Route path="/employee/assets" element={<AssetListPage />} />
+        <Route path="/employee/orders" element={<OrderManagementPage />} />
+        <Route path="/department-head" element={<DepartmentHeadPage />} />
+
+        {/* Quản lý tài sản */}
+        <Route path="/management" element={<ManagementPage />} />
+        <Route path="/management/assets" element={<ManageAssets />} />
+        <Route path="/management/approve-orders" element={<ApproveOrders />} />
       </Routes>
     </Router>
   );
-}
+};
 
 export default App;

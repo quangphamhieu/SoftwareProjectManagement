@@ -1,6 +1,7 @@
-﻿using System.Collections.Generic;
-using WebApplication1.DTO.Find;
+﻿// IAssetService.cs
+using System.Collections.Generic;
 using WebApplication1.DTO.Create;
+using WebApplication1.DTO.Find;
 using WebApplication1.DTO.Update;
 
 namespace WebApplication1.Service.Implements
@@ -10,6 +11,7 @@ namespace WebApplication1.Service.Implements
         void CreateAsset(AssetCreateDto assetCreateDto);
         AssetFindDto FindAssetById(int assetId);
         IEnumerable<AssetFindDto> GetAllAssets();
+        IEnumerable<AssetFindDto> FindAssetsByName(string assetName);  // New method
         void UpdateAsset(int assetId, AssetUpdateDto assetUpdateDto);
         void DeleteAsset(int assetId);
     }

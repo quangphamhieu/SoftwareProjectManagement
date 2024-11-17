@@ -9,7 +9,7 @@ namespace WebApplication1.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = "Admin")] // Chỉ cho phép người dùng có vai trò Admin
+    //[Authorize(Roles = "Admin")] // Chỉ cho phép người dùng có vai trò Admin
     public class RequestStatusController : ControllerBase
     {
         private readonly IRequestStatusService _requestStatusService;

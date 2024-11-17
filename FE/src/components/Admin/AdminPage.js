@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../../styles/admin.css"; // Import file CSS
-
+import { useNavigate } from "react-router-dom";
 function AdminPage() {
   const [employees, setEmployees] = useState([]);
   const [email, setEmail] = useState("");
@@ -13,11 +13,38 @@ function AdminPage() {
   const [message, setMessage] = useState("");
   const [isAddMode, setIsAddMode] = useState(false); // Để điều khiển hiển thị form thêm
   const [isEditMode, setIsEditMode] = useState(false); // Để điều khiển hiển thị form sửa
+  const [userInfo, setUserInfo] = useState(null);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const fetchUserInfo = async () => {
+      const userId = localStorage.getItem("userId"); // Lấy userId từ localStorage
+      if (userId) {
+        try {
+          const response = await fetch(
+            `https://localhost:7028/api/user/${userId}`
+          );
+          if (!response.ok)
+            throw new Error("Không thể tải thông tin người dùng.");
+          const data = await response.json();
+          setUserInfo(data);
+        } catch (error) {
+          console.error("Lỗi khi tải thông tin người dùng:", error);
+        }
+      }
+    };
+
+    fetchUserInfo();
+  }, []);
 
   useEffect(() => {
     fetchAllEmployees();
   }, []);
-
+  const handleLogout = () => {
+    localStorage.removeItem("accessToken"); // Xóa token khỏi localStorage
+    navigate("/"); // Điều hướng về trang đăng nhập
+  };
   // Gọi API để lấy tất cả nhân viên
   const fetchAllEmployees = async () => {
     try {
@@ -43,11 +70,18 @@ function AdminPage() {
       if (data.length === 0)
         throw new Error("Không tìm thấy nhân viên với tên đầy đủ đã nhập.");
 
-      // Giả định lấy nhân viên đầu tiên nếu có nhiều người trùng tên
-      const employee = data[0];
-      setSelectedEmployee(employee); // Lưu thông tin của nhân viên được tìm thấy
+      const employee = data[0]; // Lấy nhân viên đầu tiên nếu nhiều kết quả
+      setSelectedEmployee(employee);
       setMessage("");
-      setIsEditMode(false); // Đảm bảo form sửa chưa hiển thị
+
+      // Gán giá trị từ API vào form
+      setEmail(employee.email);
+      setFullName(employee.fullName);
+      setPassword(employee.password || ""); // Hiển thị mật khẩu (nếu cần)
+      setRoleId(employee.roleId ? employee.roleId.toString() : "");
+      setDepartmentHeadId(
+        employee.departmentHeadId ? employee.departmentHeadId.toString() : ""
+      );
     } catch (error) {
       console.error(error);
       setMessage("Không tìm thấy nhân viên với tên đầy đủ đã nhập.");
@@ -57,6 +91,7 @@ function AdminPage() {
   // Gọi API để cập nhật thông tin nhân viên
   const handleUpdateEmployee = async (event) => {
     event.preventDefault();
+
     if (!selectedEmployee) {
       setMessage("Không có nhân viên nào được chọn để cập nhật.");
       return;
@@ -64,7 +99,7 @@ function AdminPage() {
 
     try {
       const response = await fetch(
-        `https://localhost:7028/api/User/update?id=${selectedEmployee.id}`, // Sử dụng ID của nhân viên đã tìm thấy
+        `https://localhost:7028/api/User/update?id=${selectedEmployee.id}`, // Truyền ID qua query string
         {
           method: "PUT",
           headers: {
@@ -72,19 +107,23 @@ function AdminPage() {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            email: email,
-            password: password,
-            fullName: fullName,
-            roleId: roleId ? parseInt(roleId, 10) : null,
+            id: selectedEmployee.id, // Bao gồm ID của nhân viên trong body
+            email: email, // Email từ trạng thái
+            password: password, // Mật khẩu từ trạng thái
+            fullName: fullName, // Tên đầy đủ từ trạng thái
+            roleId: roleId ? parseInt(roleId, 10) : null, // Role ID từ trạng thái
             departmentHeadId: departmentHeadId
               ? parseInt(departmentHeadId, 10)
-              : null,
+              : null, // Department Head ID từ trạng thái
           }),
         }
       );
-      if (!response.ok)
+
+      if (!response.ok) {
         throw new Error("Không thể cập nhật thông tin nhân viên.");
-      setMessage("Thông tin nhân viên đã được cập nhật");
+      }
+
+      setMessage("Thông tin nhân viên đã được cập nhật.");
       resetForm();
       fetchAllEmployees(); // Cập nhật danh sách nhân viên
       setIsEditMode(false); // Ẩn form sửa sau khi cập nhật
@@ -159,8 +198,30 @@ function AdminPage() {
       {" "}
       {/* Bọc nội dung trong lớp này */}
       <div>
-        <h1>Quản lý nhân viên</h1>
-
+        <div className="header">
+          <h1>Chức Vụ Quản lý nhân viên</h1>
+          {userInfo ? (
+            <div
+              className="user-dropdown"
+              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+            >
+              <span className="user-name">User: {userInfo.fullName}</span>
+              {isDropdownOpen && (
+                <div className="dropdown-content">
+                  <p>ID: {userInfo.id}</p>
+                  <p>Email: {userInfo.email}</p>
+                  <p>Họ và Tên: {userInfo.fullName}</p>
+                  <p>Chức vụ: {userInfo.roleName}</p>
+                  <button onClick={handleLogout} className="logout-button">
+                    Đăng xuất
+                  </button>
+                </div>
+              )}
+            </div>
+          ) : (
+            <p>Đang tải thông tin...</p>
+          )}
+        </div>
         {/* Nút điều khiển hiển thị form thêm */}
         <button
           onClick={() => {
@@ -192,37 +253,42 @@ function AdminPage() {
         {selectedEmployee && !isEditMode && (
           <div>
             <h3>Thông tin nhân viên</h3>
-            <p>ID: {selectedEmployee.id}</p>
-            <p>Email: {selectedEmployee.email}</p>
-            <p>Tên đầy đủ: {selectedEmployee.fullName}</p>
-            <p>Chức vụ: {selectedEmployee.roleName}</p>
-            <p>
-              ID người quản lý :{" "}
-              {selectedEmployee.departmentHeadId
-                ? selectedEmployee.departmentHeadId
-                : "Chưa được quản lý bởi ai"}
-            </p>
-            <button
-              onClick={() => {
-                setIsEditMode(true);
-                setIsAddMode(false);
-                setEmail(selectedEmployee.email);
-                setFullName(selectedEmployee.fullName);
-                setPassword("");
-                setRoleId(
-                  selectedEmployee.roleId
-                    ? selectedEmployee.roleId.toString()
-                    : ""
-                );
-                setDepartmentHeadId(
-                  selectedEmployee.departmentHeadId
-                    ? selectedEmployee.departmentHeadId.toString()
-                    : ""
-                );
-              }}
-            >
-              Sửa
-            </button>
+            <div className="box-nhanvien">
+              <p>ID: {selectedEmployee.id}</p>
+              <p>Email: {selectedEmployee.email}</p>
+              <p>Password: {selectedEmployee.password}</p>
+              <p>Tên đầy đủ: {selectedEmployee.fullName}</p>
+              <p>Chức vụ: {selectedEmployee.roleName}</p>
+              <p>
+                ID người quản lý :{" "}
+                {selectedEmployee.departmentHeadId
+                  ? selectedEmployee.departmentHeadId
+                  : "Chưa được quản lý bởi ai"}
+              </p>
+              {/* Nút sửa */}
+              <button
+                onClick={() => {
+                  setSelectedEmployee(selectedEmployee); // Gán nhân viên được chọn vào trạng thái
+                  setIsEditMode(true); // Hiển thị form sửa
+                  setIsAddMode(false); // Tắt form thêm
+                  setEmail(selectedEmployee.email || ""); // Gán email
+                  setFullName(selectedEmployee.fullName || ""); // Gán tên đầy đủ
+                  setPassword(selectedEmployee.password || ""); // Gán mật khẩu
+                  setRoleId(
+                    selectedEmployee.roleId
+                      ? selectedEmployee.roleId.toString()
+                      : ""
+                  ); // Gán Role ID
+                  setDepartmentHeadId(
+                    selectedEmployee.departmentHeadId
+                      ? selectedEmployee.departmentHeadId.toString()
+                      : ""
+                  ); // Gán ID người quản lý
+                }}
+              >
+                Sửa
+              </button>
+            </div>
           </div>
         )}
 
@@ -234,40 +300,40 @@ function AdminPage() {
             <input
               type="email"
               placeholder="Email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              value={email} // Lấy giá trị từ trạng thái
+              onChange={(e) => setEmail(e.target.value)} // Cập nhật trạng thái khi thay đổi
               required
             />
             <label>Password:</label>
             <input
               type="password"
               placeholder="Mật khẩu"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              value={password} // Lấy giá trị từ trạng thái
+              onChange={(e) => setPassword(e.target.value)} // Cập nhật trạng thái khi thay đổi
               required
             />
             <label>Tên đầy đủ:</label>
             <input
               type="text"
               placeholder="Tên đầy đủ"
-              value={fullName}
-              onChange={(e) => setFullName(e.target.value)}
+              value={fullName} // Lấy giá trị từ trạng thái
+              onChange={(e) => setFullName(e.target.value)} // Cập nhật trạng thái khi thay đổi
               required
             />
             <label>Role ID:</label>
             <input
               type="text"
               placeholder="Role ID"
-              value={roleId}
-              onChange={(e) => setRoleId(e.target.value)}
+              value={roleId} // Lấy giá trị từ trạng thái
+              onChange={(e) => setRoleId(e.target.value)} // Cập nhật trạng thái khi thay đổi
               required
             />
             <label>Được quản lý bởi:</label>
             <input
               type="text"
               placeholder="Được quản lý bởi"
-              value={departmentHeadId}
-              onChange={(e) => setDepartmentHeadId(e.target.value)}
+              value={departmentHeadId} // Lấy giá trị từ trạng thái
+              onChange={(e) => setDepartmentHeadId(e.target.value)} // Cập nhật trạng thái khi thay đổi
             />
             <button type="submit">Cập nhật</button>
           </form>

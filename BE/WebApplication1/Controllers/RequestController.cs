@@ -1,11 +1,6 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Linq;
-using WebApplication1.DbContexts; // Đảm bảo bạn có namespace này
 using WebApplication1.DTO.Create;
-using WebApplication1.Entity;
 using WebApplication1.Service.Abstracts;
 
 namespace WebApplication1.Controllers
@@ -15,24 +10,18 @@ namespace WebApplication1.Controllers
     public class RequestController : ControllerBase
     {
         private readonly IRequestService _requestService;
-        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public RequestController(IRequestService requestService, IHttpContextAccessor httpContextAccessor)
+        public RequestController(IRequestService requestService)
         {
             _requestService = requestService;
-            _httpContextAccessor = httpContextAccessor;
         }
 
         [HttpPost]
-        [Authorize(Roles = "Employee")]
         public IActionResult CreateRequest([FromBody] RequestCreateDto requestCreateDto)
         {
-            var employeeIdClaim = _httpContextAccessor.HttpContext?.User.FindFirst("Id");
-            var employeeId = employeeIdClaim != null ? Int32.Parse(employeeIdClaim.Value) : 0;
-
             try
             {
-                var request = _requestService.CreateRequest(requestCreateDto, employeeId);
+                var request = _requestService.CreateRequest(requestCreateDto, requestCreateDto.EmployeeId);
                 return CreatedAtAction(nameof(FindRequestById), new { id = request.Id }, request);
             }
             catch (ArgumentException ex)
@@ -42,7 +31,6 @@ namespace WebApplication1.Controllers
         }
 
         [HttpGet("{id}")]
-        [Authorize]
         public IActionResult FindRequestById(int id)
         {
             var request = _requestService.FindRequestById(id);
@@ -52,47 +40,21 @@ namespace WebApplication1.Controllers
             return Ok(request);
         }
 
-        [HttpGet("my-request")]
-        [Authorize]
-        public IActionResult FindMyRequest()
+        [HttpGet("employee-requests/{employeeId}")]
+        public IActionResult GetRequestsByEmployeeId(int employeeId)
         {
-            var employeeIdClaim = _httpContextAccessor.HttpContext?.User.FindFirst("Id");
-            var employeeId = employeeIdClaim != null ? Int32.Parse(employeeIdClaim.Value) : 0;
-
             var requests = _requestService.GetRequestsByEmployeeId(employeeId);
             return Ok(requests);
         }
 
-        [HttpGet("my-pending-requests")]
-        [Authorize(Roles = "DepartmentHead")]
-        public IActionResult GetPendingRequestsByDepartmentHeadId()
+        [HttpGet("pending-requests/{departmentHeadId}")]
+        public IActionResult GetPendingRequestsByDepartmentHeadId(int departmentHeadId)
         {
-            // Retrieve DepartmentHeadId from claims
-            var departmentHeadIdClaim = _httpContextAccessor.HttpContext?.User.FindFirst("Id");
-            var departmentHeadId = departmentHeadIdClaim != null ? Int32.Parse(departmentHeadIdClaim.Value) : 0;
-
-            // Fetch pending requests for the department head
             var requests = _requestService.GetPendingRequestsByDepartmentHeadId(departmentHeadId);
             return Ok(requests);
         }
 
-        [HttpGet("all-my-requests")]
-        [Authorize(Roles = "DepartmentHead")]
-        public IActionResult GetAllRequestsByDepartmentHeadId()
-        {
-            // Retrieve DepartmentHeadId from claims
-            var departmentHeadIdClaim = _httpContextAccessor.HttpContext?.User.FindFirst("Id");
-            var departmentHeadId = departmentHeadIdClaim != null ? Int32.Parse(departmentHeadIdClaim.Value) : 0;
-
-            // Fetch all requests for the department head's employees
-            var requests = _requestService.GetAllRequestsByDepartmentHeadId(departmentHeadId);
-            return Ok(requests);
-        }
-
-
-
-        [HttpGet("assetManagement")]
-        [Authorize(Roles = "AssetManager")]
+        [HttpGet("approved-requests")]
         public IActionResult GetApprovedRequestsForAssetManagement()
         {
             var requests = _requestService.GetApprovedRequestsForAssetManagement();
@@ -100,7 +62,6 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPut("approve/{id}")]
-        [Authorize(Roles = "DepartmentHead")]
         public IActionResult ApproveRequest(int id)
         {
             try
@@ -108,14 +69,13 @@ namespace WebApplication1.Controllers
                 _requestService.ApproveRequest(id);
                 return Ok("Request approved by department head.");
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
         }
 
         [HttpPut("reject/{id}")]
-        [Authorize(Roles = "DepartmentHead")]
         public IActionResult RejectRequest(int id)
         {
             try
@@ -123,14 +83,13 @@ namespace WebApplication1.Controllers
                 _requestService.RejectRequest(id);
                 return Ok("Request rejected.");
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
         }
 
         [HttpDelete("{id}")]
-        [Authorize(Roles = "Employee")]
         public IActionResult DeleteRequest(int id)
         {
             try
@@ -138,14 +97,13 @@ namespace WebApplication1.Controllers
                 _requestService.DeleteRequest(id);
                 return Ok("Request deleted.");
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
         }
 
         [HttpPut("assetManagement/approve/{id}")]
-        [Authorize(Roles = "AssetManager")]
         public IActionResult ApproveAssetRequest(int id)
         {
             try
@@ -153,7 +111,7 @@ namespace WebApplication1.Controllers
                 _requestService.ApproveAssetRequest(id);
                 return Ok("Request approved by asset management.");
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }

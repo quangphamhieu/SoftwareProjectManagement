@@ -57,6 +57,7 @@ namespace WebApplication1.Service.Implements
                     Id = u.Id,
                     Email = u.Email,
                     FullName = u.FullName,
+                    Password = u.Password,
                     DepartmentHeadId = u.DepartmentHeadId,
                     DepartmentHeadName = u.DepartmentHead != null ? u.DepartmentHead.FullName : string.Empty,
                     RoleName = _context.UserRoles
@@ -81,6 +82,7 @@ namespace WebApplication1.Service.Implements
                     Id = user.Id,
                     Email = user.Email,
                     FullName = user.FullName,
+                    Password = user.Password,
                     DepartmentHeadId = user.DepartmentHeadId,
                     DepartmentHeadName = user.DepartmentHead != null ? user.DepartmentHead.FullName : string.Empty,
                     RoleName = _context.UserRoles
@@ -103,6 +105,7 @@ namespace WebApplication1.Service.Implements
                     Id = u.Id,
                     Email = u.Email,
                     FullName = u.FullName,
+                    Password = u.Password,
                     DepartmentHeadId = u.DepartmentHeadId,
                     DepartmentHeadName = u.DepartmentHead != null ? u.DepartmentHead.FullName : string.Empty,
                     RoleName = _context.UserRoles
@@ -145,6 +148,7 @@ namespace WebApplication1.Service.Implements
 
             user.Email = userUpdateDto.Email;
             user.FullName = userUpdateDto.FullName;
+            user.Password = userUpdateDto.Password;
             user.DepartmentHeadId = userUpdateDto.DepartmentHeadId;
 
             _context.SaveChanges();
@@ -158,5 +162,29 @@ namespace WebApplication1.Service.Implements
             _context.Users.Remove(user);
             _context.SaveChanges();
         }
-    } 
+        public UserFindDto FindUserById(int id)
+        {
+            var user = _context.Users
+                .Where(u => u.Id == id)
+                .Select(u => new UserFindDto
+                {
+                    Id = u.Id,
+                    Email = u.Email,
+                    FullName = u.FullName,
+                    DepartmentHeadId = u.DepartmentHeadId,
+                    DepartmentHeadName = u.DepartmentHead != null ? u.DepartmentHead.FullName : string.Empty,
+                    RoleName = _context.UserRoles
+                        .Where(ur => ur.UserId == u.Id)
+                        .Join(_context.Roles,
+                              ur => ur.RoleId,
+                              r => r.Id,
+                              (ur, r) => r.Name)
+                        .FirstOrDefault()
+                })
+                .FirstOrDefault();
+
+            return user ?? throw new Exception("User not found");
+        }
+
+    }
 }

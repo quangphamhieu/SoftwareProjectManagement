@@ -81,5 +81,18 @@ namespace WebApplication1.Service.Abstracts
             _context.Assets.Remove(asset);
             _context.SaveChanges();
         }
+        public IEnumerable<AssetFindDto> FindAssetsByName(string assetName)
+        {
+            return _context.Assets
+                .Where(asset => asset.Name.Contains(assetName))  // Filter by name
+                .Select(asset => new AssetFindDto
+                {
+                    Id = asset.Id,
+                    Name = asset.Name,
+                    Description = asset.Description,
+                    Quantity = asset.Quantity
+                })
+                .ToList();
+        }
     }
 }

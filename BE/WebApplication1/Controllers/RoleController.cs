@@ -11,7 +11,7 @@ namespace WebApplication1.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = "Admin")] // Chỉ cho phép người dùng có vai trò Admin
+    //[Authorize(Roles = "Admin")] // Chỉ cho phép người dùng có vai trò Admin
     public class RoleController : ControllerBase
     {
         private readonly IRoleService _roleService;

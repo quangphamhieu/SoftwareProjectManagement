@@ -10,7 +10,7 @@ namespace WebApplication1.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    [Authorize]
+    //[Authorize]
     public class AssetController : ControllerBase
     {
         private readonly IAssetService _assetService;
@@ -22,7 +22,7 @@ namespace WebApplication1.Controllers
 
         // POST: api/asset
         [HttpPost]
-        [Authorize(Roles = "AssetManager")] // Chỉ cho phép bộ phận quản lý tài sản tạo tài sản
+        //[Authorize(Roles = "AssetManager")] // Chỉ cho phép bộ phận quản lý tài sản tạo tài sản
         public IActionResult CreateAsset([FromBody] AssetCreateDto assetCreateDto)
         {
             _assetService.CreateAsset(assetCreateDto);
@@ -31,7 +31,7 @@ namespace WebApplication1.Controllers
 
         // GET: api/asset/{assetId}
         [HttpGet("{assetId}")]
-        [Authorize(Roles = "AssetManager, Employee")] // Cho phép cả bộ phận quản lý tài sản và nhân viên xem tài sản
+        //[Authorize(Roles = "AssetManager, Employee")] // Cho phép cả bộ phận quản lý tài sản và nhân viên xem tài sản
         public IActionResult FindAssetById(int assetId)
         {
             var asset = _assetService.FindAssetById(assetId);
@@ -44,7 +44,7 @@ namespace WebApplication1.Controllers
 
         // GET: api/asset
         [HttpGet]
-        [Authorize(Roles = "AssetManager, Employee")] // Cho phép cả bộ phận quản lý tài sản và nhân viên xem tất cả tài sản
+        //[Authorize(Roles = "AssetManager, Employee")] // Cho phép cả bộ phận quản lý tài sản và nhân viên xem tất cả tài sản
         public IEnumerable<AssetFindDto> GetAllAssets()
         {
             return _assetService.GetAllAssets();
@@ -52,7 +52,7 @@ namespace WebApplication1.Controllers
 
         // PUT: api/asset/{assetId}
         [HttpPut("{assetId}")]
-        [Authorize(Roles = "AssetManager")] // Chỉ cho phép bộ phận quản lý tài sản cập nhật tài sản
+        //[Authorize(Roles = "AssetManager")] // Chỉ cho phép bộ phận quản lý tài sản cập nhật tài sản
         public IActionResult UpdateAsset(int assetId, [FromBody] AssetUpdateDto assetUpdateDto)
         {
             _assetService.UpdateAsset(assetId, assetUpdateDto);
@@ -61,11 +61,23 @@ namespace WebApplication1.Controllers
 
         // DELETE: api/asset/{assetId}
         [HttpDelete("{assetId}")]
-        [Authorize(Roles = "AssetManager")] // Chỉ cho phép bộ phận quản lý tài sản xóa tài sản
+        //[Authorize(Roles = "AssetManager")] // Chỉ cho phép bộ phận quản lý tài sản xóa tài sản
         public IActionResult DeleteAsset(int assetId)
         {
             _assetService.DeleteAsset(assetId);
             return NoContent();
         }
+        //Search
+        [HttpGet("search")]
+        public IActionResult FindAssetsByName([FromQuery] string name)
+        {
+            var assets = _assetService.FindAssetsByName(name);
+            if (!assets.Any())
+            {
+                return NotFound("No assets found with the given name.");
+            }
+            return Ok(assets);
+        }
+
     }
 }
