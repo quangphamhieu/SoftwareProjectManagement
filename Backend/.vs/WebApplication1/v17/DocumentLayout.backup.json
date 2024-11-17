@@ -1,0 +1,585 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\qlda_qltaisan\\softwareprojectmanagement-main\\webapplication1\\service\\abstracts\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\service\\abstracts\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\qlda_qltaisan\\softwareprojectmanagement-main\\webapplication1\\dto\\update\\userupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dto\\update\\userupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\qlda_qltaisan\\softwareprojectmanagement-main\\webapplication1\\dto\\find\\userfinddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dto\\find\\userfinddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\qlda_qltaisan\\softwareprojectmanagement-main\\webapplication1\\dto\\find\\requestfinddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dto\\find\\requestfinddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\qlda_qltaisan\\softwareprojectmanagement-main\\webapplication1\\dto\\create\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dto\\create\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\qlda_qltaisan\\softwareprojectmanagement-main\\webapplication1\\service\\abstracts\\requestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\service\\abstracts\\requestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\qlda_qltaisan\\softwareprojectmanagement-main\\webapplication1\\service\\abstracts\\requeststatusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\service\\abstracts\\requeststatusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\qlda_qltaisan\\softwareprojectmanagement-main\\webapplication1\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\qlda_qltaisan\\softwareprojectmanagement-main\\webapplication1\\service\\implements\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\service\\implements\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\qlda_qltaisan\\softwareprojectmanagement-main\\webapplication1\\service\\abstracts\\assetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\service\\abstracts\\assetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\qlda_qltaisan\\softwareprojectmanagement-main\\webapplication1\\service\\implements\\irequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\service\\implements\\irequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\qlda_qltaisan\\softwareprojectmanagement-main\\webapplication1\\service\\implements\\iassetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\service\\implements\\iassetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\qlda_qltaisan\\softwareprojectmanagement-main\\webapplication1\\dto\\request\\requestitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dto\\request\\requestitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\qlda_qltaisan\\softwareprojectmanagement-main\\webapplication1\\controllers\\assetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\assetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\qlda_qltaisan\\softwareprojectmanagement-main\\webapplication1\\dto\\create\\assetcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dto\\create\\assetcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\qlda_qltaisan\\softwareprojectmanagement-main\\webapplication1\\dto\\create\\requestcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dto\\create\\requestcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\qlda_qltaisan\\softwareprojectmanagement-main\\webapplication1\\entity\\requestitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\entity\\requestitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\qlda_qltaisan\\softwareprojectmanagement-main\\webapplication1\\entity\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\entity\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\qlda_qltaisan\\softwareprojectmanagement-main\\webapplication1\\controllers\\requestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\requestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\qlda_qltaisan\\softwareprojectmanagement-main\\webapplication1\\entity\\requeststatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\entity\\requeststatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\qlda_qltaisan\\softwareprojectmanagement-main\\webapplication1\\dto\\update\\requestupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dto\\update\\requestupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\qlda_qltaisan\\softwareprojectmanagement-main\\webapplication1\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\qlda_qltaisan\\softwareprojectmanagement-main\\webapplication1\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\qlda_qltaisan\\softwareprojectmanagement-main\\webapplication1\\controllers\\requeststatuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\requeststatuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\qlda_qltaisan\\softwareprojectmanagement-main\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\qlda_qltaisan\\softwareprojectmanagement-main\\webapplication1\\service\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\service\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\qlda_qltaisan\\softwareprojectmanagement-main\\webapplication1\\dto\\auth\\authdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dto\\auth\\authdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\qlda_qltaisan\\softwareprojectmanagement-main\\webapplication1\\entity\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\entity\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\qlda_qltaisan\\softwareprojectmanagement-main\\webapplication1\\entity\\asset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\entity\\asset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\qlda_qltaisan\\softwareprojectmanagement-main\\webapplication1\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\qlda_qltaisan\\softwareprojectmanagement-main\\webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\qlda_qltaisan\\softwareprojectmanagement-main\\webapplication1\\dto\\find\\requeststatusfinddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dto\\find\\requeststatusfinddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\qlda_qltaisan\\softwareprojectmanagement-main\\webapplication1\\dbcontexts\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dbcontexts\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\qlda_qltaisan\\softwareprojectmanagement-main\\webapplication1\\dto\\find\\rolefinddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dto\\find\\rolefinddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|d:\\qlda_qltaisan\\softwareprojectmanagement-main\\webapplication1\\migrations\\20241105183833_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B57C9A4-5BA9-413A-A915-000C4AA77E04}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\migrations\\20241105183833_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Service\\Abstracts\\UserService.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Service\\Abstracts\\UserService.cs",
+              "ToolTip": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Service\\Abstracts\\UserService.cs",
+              "RelativeToolTip": "WebApplication1\\Service\\Abstracts\\UserService.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAAAJkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:35:48.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Controllers\\UserController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAFkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:47:29.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Service\\Implements\\IUserService.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Service\\Implements\\IUserService.cs",
+              "ToolTip": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Service\\Implements\\IUserService.cs",
+              "RelativeToolTip": "WebApplication1\\Service\\Implements\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:47:03.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RequestStatusService.cs",
+              "DocumentMoniker": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Service\\Abstracts\\RequestStatusService.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Service\\Abstracts\\RequestStatusService.cs",
+              "ToolTip": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Service\\Abstracts\\RequestStatusService.cs",
+              "RelativeToolTip": "WebApplication1\\Service\\Abstracts\\RequestStatusService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T18:23:16.829Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RequestService.cs",
+              "DocumentMoniker": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Service\\Abstracts\\RequestService.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Service\\Abstracts\\RequestService.cs",
+              "ToolTip": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Service\\Abstracts\\RequestService.cs",
+              "RelativeToolTip": "WebApplication1\\Service\\Abstracts\\RequestService.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAuwHUAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T15:01:30.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RequestFindDto.cs",
+              "DocumentMoniker": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\DTO\\Find\\RequestFindDto.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\DTO\\Find\\RequestFindDto.cs",
+              "ToolTip": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\DTO\\Find\\RequestFindDto.cs",
+              "RelativeToolTip": "WebApplication1\\DTO\\Find\\RequestFindDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:58:41.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserFindDto.cs",
+              "DocumentMoniker": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\DTO\\Find\\UserFindDto.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\DTO\\Find\\UserFindDto.cs",
+              "ToolTip": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\DTO\\Find\\UserFindDto.cs",
+              "RelativeToolTip": "WebApplication1\\DTO\\Find\\UserFindDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:34:16.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserUpdateDto.cs",
+              "DocumentMoniker": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\DTO\\Update\\UserUpdateDto.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\DTO\\Update\\UserUpdateDto.cs",
+              "ToolTip": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\DTO\\Update\\UserUpdateDto.cs",
+              "RelativeToolTip": "WebApplication1\\DTO\\Update\\UserUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:50:27.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserCreateDto.cs",
+              "DocumentMoniker": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\DTO\\Create\\UserCreateDto.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\DTO\\Create\\UserCreateDto.cs",
+              "ToolTip": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\DTO\\Create\\UserCreateDto.cs",
+              "RelativeToolTip": "WebApplication1\\DTO\\Create\\UserCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:32:21.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AssetController.cs",
+              "DocumentMoniker": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Controllers\\AssetController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\AssetController.cs",
+              "ToolTip": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Controllers\\AssetController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\AssetController.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAAEUAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:25:46.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AssetCreateDto.cs",
+              "DocumentMoniker": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\DTO\\Create\\AssetCreateDto.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\DTO\\Create\\AssetCreateDto.cs",
+              "ToolTip": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\DTO\\Create\\AssetCreateDto.cs",
+              "RelativeToolTip": "WebApplication1\\DTO\\Create\\AssetCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T15:05:21.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RequestItemDto.cs",
+              "DocumentMoniker": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\DTO\\Request\\RequestItemDto.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\DTO\\Request\\RequestItemDto.cs",
+              "ToolTip": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\DTO\\Request\\RequestItemDto.cs",
+              "RelativeToolTip": "WebApplication1\\DTO\\Request\\RequestItemDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T15:56:15.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AssetService.cs",
+              "DocumentMoniker": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Service\\Abstracts\\AssetService.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Service\\Abstracts\\AssetService.cs",
+              "ToolTip": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Service\\Abstracts\\AssetService.cs",
+              "RelativeToolTip": "WebApplication1\\Service\\Abstracts\\AssetService.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAGAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T14:53:13.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IRequestService.cs",
+              "DocumentMoniker": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Service\\Implements\\IRequestService.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Service\\Implements\\IRequestService.cs",
+              "ToolTip": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Service\\Implements\\IRequestService.cs",
+              "RelativeToolTip": "WebApplication1\\Service\\Implements\\IRequestService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T16:32:35.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IAssetService.cs",
+              "DocumentMoniker": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Service\\Implements\\IAssetService.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Service\\Implements\\IAssetService.cs",
+              "ToolTip": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Service\\Implements\\IAssetService.cs",
+              "RelativeToolTip": "WebApplication1\\Service\\Implements\\IAssetService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T14:52:42.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RequestController.cs",
+              "DocumentMoniker": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Controllers\\RequestController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\RequestController.cs",
+              "ToolTip": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Controllers\\RequestController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\RequestController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:57:53.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Request.cs",
+              "DocumentMoniker": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Entity\\Request.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Entity\\Request.cs",
+              "ToolTip": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Entity\\Request.cs",
+              "RelativeToolTip": "WebApplication1\\Entity\\Request.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAA8AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:57:58.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RequestCreateDto.cs",
+              "DocumentMoniker": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\DTO\\Create\\RequestCreateDto.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\DTO\\Create\\RequestCreateDto.cs",
+              "ToolTip": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\DTO\\Create\\RequestCreateDto.cs",
+              "RelativeToolTip": "WebApplication1\\DTO\\Create\\RequestCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:58:57.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RequestItem.cs",
+              "DocumentMoniker": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Entity\\RequestItem.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Entity\\RequestItem.cs",
+              "ToolTip": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Entity\\RequestItem.cs",
+              "RelativeToolTip": "WebApplication1\\Entity\\RequestItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T15:05:31.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RequestStatus.cs",
+              "DocumentMoniker": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Entity\\RequestStatus.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Entity\\RequestStatus.cs",
+              "ToolTip": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Entity\\RequestStatus.cs",
+              "RelativeToolTip": "WebApplication1\\Entity\\RequestStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T18:19:16.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RequestUpdateDto.cs",
+              "DocumentMoniker": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\DTO\\Update\\RequestUpdateDto.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\DTO\\Update\\RequestUpdateDto.cs",
+              "ToolTip": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\DTO\\Update\\RequestUpdateDto.cs",
+              "RelativeToolTip": "WebApplication1\\DTO\\Update\\RequestUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:59:23.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:23:45.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "RequestStatusController.cs",
+              "DocumentMoniker": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Controllers\\RequestStatusController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\RequestStatusController.cs",
+              "ToolTip": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Controllers\\RequestStatusController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\RequestStatusController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAqwD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:57:52.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
+              "ToolTip": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Program.cs",
+              "RelativeToolTip": "WebApplication1\\Program.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAAGkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:18:25.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "RoleController.cs",
+              "DocumentMoniker": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Controllers\\RoleController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\RoleController.cs",
+              "ToolTip": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Controllers\\RoleController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\RoleController.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAqwA0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:57:51.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Entity\\User.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Entity\\User.cs",
+              "ToolTip": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Entity\\User.cs",
+              "RelativeToolTip": "WebApplication1\\Entity\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:34:24.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Service\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Service\\AuthenticationService.cs",
+              "ToolTip": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Service\\AuthenticationService.cs",
+              "RelativeToolTip": "WebApplication1\\Service\\AuthenticationService.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAgwBwAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T16:15:50.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AuthDto.cs",
+              "DocumentMoniker": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\DTO\\Auth\\AuthDto.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\DTO\\Auth\\AuthDto.cs",
+              "ToolTip": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\DTO\\Auth\\AuthDto.cs",
+              "RelativeToolTip": "WebApplication1\\DTO\\Auth\\AuthDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:25:21.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Role.cs",
+              "DocumentMoniker": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Entity\\Role.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Entity\\Role.cs",
+              "ToolTip": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Entity\\Role.cs",
+              "RelativeToolTip": "WebApplication1\\Entity\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T18:44:30.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Asset.cs",
+              "DocumentMoniker": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Entity\\Asset.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Entity\\Asset.cs",
+              "ToolTip": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Entity\\Asset.cs",
+              "RelativeToolTip": "WebApplication1\\Entity\\Asset.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T18:44:33.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "20241105183833_Init.cs",
+              "DocumentMoniker": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Migrations\\20241105183833_Init.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Migrations\\20241105183833_Init.cs",
+              "ToolTip": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\Migrations\\20241105183833_Init.cs",
+              "RelativeToolTip": "WebApplication1\\Migrations\\20241105183833_Init.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T18:38:33.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\appsettings.json",
+              "RelativeDocumentMoniker": "WebApplication1\\appsettings.json",
+              "ToolTip": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\appsettings.json",
+              "RelativeToolTip": "WebApplication1\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-04T18:04:16.672Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "RequestStatusFindDto.cs",
+              "DocumentMoniker": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\DTO\\Find\\RequestStatusFindDto.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\DTO\\Find\\RequestStatusFindDto.cs",
+              "ToolTip": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\DTO\\Find\\RequestStatusFindDto.cs",
+              "RelativeToolTip": "WebApplication1\\DTO\\Find\\RequestStatusFindDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T18:12:49.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\DbContexts\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\DbContexts\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\DbContexts\\ApplicationDbContext.cs",
+              "RelativeToolTip": "WebApplication1\\DbContexts\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:18:40.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "RoleFindDto.cs",
+              "DocumentMoniker": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\DTO\\Find\\RoleFindDto.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\DTO\\Find\\RoleFindDto.cs",
+              "ToolTip": "D:\\QLDA_QLTaiSan\\SoftwareProjectManagement-main\\WebApplication1\\DTO\\Find\\RoleFindDto.cs",
+              "RelativeToolTip": "WebApplication1\\DTO\\Find\\RoleFindDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T15:12:19.145Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
